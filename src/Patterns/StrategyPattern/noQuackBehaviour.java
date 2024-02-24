@@ -1,8 +1,10 @@
 package Patterns.StrategyPattern;
 
-public class noQuackBehaviour implements quackBehaviour{
+public class noQuackBehaviour implements QuackBehaviour {
+    String quack="No quack";
     @Override
-    public void quack() {
-        System.out.println("Quack (1)");
+    public String quack() {
+        System.out.println("No quack");
+        return quack;
     }
 }
